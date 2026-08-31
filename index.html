@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pre Meeting 是一款从真实日历出发、主动读取材料并交付可审核会前成果的自主准备 Agent。"
+    />
+    <meta name="theme-color" content="#fbfbf8" />
+    <title>Pre Meeting｜让每一场会，都在开始前就绪</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Pre Meeting 首页">
+        <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true">
+          <path d="M9 8.5h24a4.5 4.5 0 0 1 4.5 4.5v16A4.5 4.5 0 0 1 33 33.5H9A4.5 4.5 0 0 1 4.5 29V13A4.5 4.5 0 0 1 9 8.5Z" />
+          <path d="M13 5.5v7M29 5.5v7M5 16h32" />
+          <path d="m14 24 4 4 9-10" />
+        </svg>
+        <span>Pre Meeting</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="#demo">产品演示</a>
+        <a href="#capabilities">核心能力</a>
+        <a href="#workflow">工作方式</a>
+        <a href="#trust">安全边界</a>
+      </nav>
+
+      <a class="nav-cta" href="#demo">查看演示 <span aria-hidden="true">↘</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="live-dot"></span> 为会议准备而生的智能助理</p>
+          <h1>让每一场会，<br /><span>都在开始前就绪</span></h1>
+          <p class="hero-lede">
+            从真实日历出发，读完相关材料，找到真正的问题，<br class="desktop-only" />
+            把你需要讲、需要问、需要决定的内容提前放到面前。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#demo">观看它如何工作 <span aria-hidden="true">↓</span></a>
+            <a class="button button-ghost" href="#workflow">了解完整流程 <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="hero-status" aria-label="产品核心能力">
+          <div><span>01</span>真实会议触发</div>
+          <div><span>02</span>证据驱动准备</div>
+          <div><span>03</span>成果直接可用</div>
+        </div>
+      </section>
+
+      <section class="demo-shell" id="demo" aria-labelledby="demo-heading">
+        <div class="demo-grain" aria-hidden="true"></div>
+
+        <div class="demo-tabs-row">
+          <div class="demo-tabs" role="tablist" aria-label="会前准备演示阶段">
+            <button class="demo-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="demo-panel" data-demo-index="0">
+              <span class="tab-dot"></span>会议自动触发
+            </button>
+            <button class="demo-tab" type="button" role="tab" aria-selected="false" aria-controls="demo-panel" data-demo-index="1" tabindex="-1">
+              <span class="tab-dot"></span>自主阅读判断
+            </button>
+            <button class="demo-tab" type="button" role="tab" aria-selected="false" aria-controls="demo-panel" data-demo-index="2" tabindex="-1">
+              <span class="tab-dot"></span>证据触发改判
+            </button>
+            <button class="demo-tab" type="button" role="tab" aria-selected="false" aria-controls="demo-panel" data-demo-index="3" tabindex="-1">
+              <span class="tab-dot"></span>交付即可使用
+            </button>
+          </div>
+
+          <button class="play-toggle" type="button" aria-label="暂停自动演示" aria-pressed="false" data-play-toggle>
+            <span class="pause-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <div class="demo-grid" id="demo-panel" role="tabpanel" tabindex="0">
+          <article class="demo-copy" aria-live="polite">
+            <p class="section-kicker" data-demo-kicker>REAL CALENDAR</p>
+            <h2 id="demo-heading" data-demo-title>会议进入日历，准备自动开始</h2>
+            <ul data-demo-points>
+              <li>从用户真实导入的会议出发，不需要重新创建任务</li>
+              <li>根据会议时间与准备规则，在合适的时刻自动启动</li>
+              <li>用户始终能看到当前状态，也可以随时跳过或接管</li>
+            </ul>
+            <div class="demo-progress-copy">
+              <span data-demo-number>&lt;01&gt;</span>
+              <span data-demo-status>正在识别会议上下文</span>
+            </div>
+          </article>
+
+          <div class="product-window" aria-label="Pre Meeting 交互演示">
+            <div class="window-bar">
+              <div class="traffic-lights" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div class="window-title"><span class="window-title-dot"></span>Pre Meeting · 产品例会</div>
+              <div class="window-state"><span></span>自动准备中</div>
+            </div>
+            <div class="window-body">
+              <aside class="mini-sidebar" aria-hidden="true">
+                <div class="mini-logo">会</div>
+                <span class="mini-nav is-active"></span>
+                <span class="mini-nav"></span>
+                <span class="mini-nav"></span>
+                <span class="mini-nav mini-nav-bottom"></span>
+              </aside>
+              <div class="scene" data-scene aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-timeline" aria-hidden="true">
+          <span class="demo-timeline-fill" data-demo-timeline></span>
+        </div>
+      </section>
+
+      <section class="capabilities section-pad" id="capabilities">
+        <div class="capability-heading reveal">
+          <p class="eyebrow">FROM CONTEXT TO DECISION</p>
+          <h2>真正减少会前的认知工作</h2>
+          <p>不只是把文档变短，而是把理解、核验和组织提前完成。</p>
+        </div>
+
+        <div class="capability-showcase reveal" data-capability-showcase>
+          <div class="capability-stage" aria-label="Pre Meeting 三项核心能力示意">
+            <div class="capability-orbit orbit-one" aria-hidden="true"></div>
+            <div class="capability-orbit orbit-two" aria-hidden="true"></div>
+
+            <button class="app-card card-context is-active" type="button" data-capability-card="0" aria-pressed="true" aria-label="查看理解会议任务">
+              <span class="app-card-surface">
+                <span class="app-card-bar"><i></i><i></i><i></i><b>Pre Meeting</b><em>准备中</em></span>
+                <span class="app-card-body">
+                  <span class="mock-overline">TOMORROW · 10:00</span>
+                  <strong class="mock-meeting-title">商品增长例会</strong>
+                  <span class="mock-meta">产品策略 · 8 位参会者</span>
+                  <span class="mock-focus-block">
+                    <small>这次要推动的决定</small>
+                    <b>确定首批上线范围与进入条件</b>
+                    <span><i></i>新方案改变了会议重点，已更新准备方向</span>
+                  </span>
+                  <span class="mock-section-title"><b>需要先弄清</b><em>2 项</em></span>
+                  <span class="mock-question"><i>01</i><span>两个候选范围的收益差异是什么？</span></span>
+                  <span class="mock-question"><i>02</i><span>权限改造是否会阻塞本周上线？</span></span>
+                </span>
+              </span>
+            </button>
+
+            <button class="app-card card-evidence" type="button" data-capability-card="1" aria-pressed="false" aria-label="查看核验关键证据">
+              <span class="app-card-surface">
+                <span class="app-card-bar"><i></i><i></i><i></i><b>证据工作台</b><em>5 / 5 已读</em></span>
+                <span class="app-card-body">
+                  <span class="mock-overline">SOURCE REVIEW</span>
+                  <strong class="mock-meeting-title">关键事实已核验</strong>
+                  <span class="mock-meta">事实、推断与缺口分别标记</span>
+                  <span class="source-check source-check-primary">
+                    <i>✓</i><span><b>首批范围应收敛到高频场景</b><small>《灰度方案 v4》· 第 12 页</small></span><em>事实</em>
+                  </span>
+                  <span class="source-check">
+                    <i>✓</i><span><b>核心指标口径本周已更新</b><small>《指标周报 W35》· 08:42</small></span><em>事实</em>
+                  </span>
+                  <span class="source-check source-check-gap">
+                    <i>?</i><span><b>权限改造交付日期</b><small>当前材料没有明确承诺</small></span><em>待确认</em>
+                  </span>
+                </span>
+              </span>
+            </button>
+
+            <button class="app-card card-deliverable" type="button" data-capability-card="2" aria-pressed="false" aria-label="查看可直接使用的会前成果">
+              <span class="app-card-surface">
+                <span class="app-card-bar"><i></i><i></i><i></i><b>会前成果</b><em>V3 · 待确认</em></span>
+                <span class="app-card-body">
+                  <span class="mock-overline">MEETING READY</span>
+                  <strong class="mock-meeting-title">90 秒速览</strong>
+                  <span class="mock-meta">上会前，只看真正影响判断的内容</span>
+                  <span class="brief-lead"><small>建议主张</small><b>先统一指标口径，再确定首批范围。</b></span>
+                  <span class="brief-line"><i>1</i><span>方案 A 收益更明确，但依赖权限改造。</span></span>
+                  <span class="brief-line"><i>2</i><span>方案 B 可按时上线，覆盖场景较少。</span></span>
+                  <span class="brief-question"><small>会上必须问</small><b>谁能确认周五前完成权限改造？</b></span>
+                  <span class="mock-source-pills"><i>方案 v4</i><i>指标周报</i><i>上次决定</i></span>
+                </span>
+              </span>
+            </button>
+
+            <div class="capability-card-nav" role="tablist" aria-label="选择能力卡片">
+              <button class="is-active" type="button" role="tab" aria-selected="true" data-capability-select="0"><span>01</span>理解</button>
+              <button type="button" role="tab" aria-selected="false" data-capability-select="1"><span>02</span>核验</button>
+              <button type="button" role="tab" aria-selected="false" data-capability-select="2"><span>03</span>交付</button>
+            </div>
+          </div>
+
+          <article class="capability-story" aria-live="polite">
+            <p class="section-kicker" data-capability-kicker>01 · TASK UNDERSTANDING</p>
+            <h3 data-capability-title>先理解这次真正要解决什么</h3>
+            <p data-capability-description>角色、标题和历史只是线索。Agent 会结合新证据持续修正任务，把注意力从“汇报进展”转向真正需要推动的决定。</p>
+            <ul data-capability-points>
+              <li>识别会议目标与当前角色</li>
+              <li>证据改变时主动改判</li>
+            </ul>
+            <button class="capability-next" type="button" data-capability-next>
+              查看下一张 <span aria-hidden="true">→</span>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="workflow section-pad" id="workflow">
+        <div class="workflow-copy reveal">
+          <p class="eyebrow">AUTO LOOP</p>
+          <h2>新证据出现，<br />准备方向也会更新。</h2>
+          <p>
+            Pre Meeting 不是一条写死的流水线。每次读取材料后，它都会重新检查：当前判断还成立吗？
+          </p>
+          <a class="text-link" href="#demo">回看动态演示 <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <ol class="workflow-list">
+          <li class="reveal"><span>01</span><div><strong>观察</strong><p>会议、用户要求、历史线索与当前证据</p></div></li>
+          <li class="reveal"><span>02</span><div><strong>行动</strong><p>搜索、阅读、比较与追溯有权限材料</p></div></li>
+          <li class="reveal"><span>03</span><div><strong>改判</strong><p>证据推翻初始理解时，重写目标与交付结构</p></div></li>
+          <li class="reveal"><span>04</span><div><strong>交付</strong><p>收敛为可审核、可追溯、可直接使用的结果</p></div></li>
+        </ol>
+      </section>
+
+      <section class="trust section-pad" id="trust">
+        <div class="trust-panel reveal">
+          <div>
+            <p class="eyebrow eyebrow-light">BUILT FOR TRUST</p>
+            <h2>主动工作，<br />但边界始终清楚。</h2>
+          </div>
+          <div class="trust-points">
+            <p><span>✓</span>只在当前用户权限内读取材料</p>
+            <p><span>✓</span>发送、分享和修改必须由用户确认</p>
+            <p><span>✓</span>审核过的内容不会被静默覆盖</p>
+            <p><span>✓</span>失败时保留已完成结果并明确缺口</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing section-pad">
+        <p class="eyebrow">MEETING READY</p>
+        <h2>把时间留给判断，<br />把准备交给 Agent。</h2>
+        <a class="button button-primary" href="#demo">重新观看演示 <span aria-hidden="true">↑</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="brand footer-brand">
+        <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true">
+          <path d="M9 8.5h24a4.5 4.5 0 0 1 4.5 4.5v16A4.5 4.5 0 0 1 33 33.5H9A4.5 4.5 0 0 1 4.5 29V13A4.5 4.5 0 0 1 9 8.5Z" />
+          <path d="M13 5.5v7M29 5.5v7M5 16h32" />
+          <path d="m14 24 4 4 9-10" />
+        </svg>
+        <span>Pre Meeting</span>
+      </div>
+      <p>动态演示用于说明产品工作方式；实际连接能力以当前构建配置为准。</p>
+      <span>© <span data-year></span></span>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
