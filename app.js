@@ -163,7 +163,7 @@ let activeIndex = 0;
 let timer = null;
 let paused = reduceMotion.matches;
 let demoInView = false;
-let activeCapability = 0;
+let activeCapability = 1;
 
 function renderDemo(index, { focus = false } = {}) {
   const demo = DEMOS[index];
@@ -329,4 +329,4 @@ reduceMotion.addEventListener("change", (event) => setPaused(event.matches));
 
 document.querySelector("[data-year]").textContent = new Date().getFullYear();
 renderDemo(0);
-renderCapability(0);
+renderCapability(1);

@@ -1280,7 +1280,12 @@ button {
   box-shadow: 0 24px 52px rgba(26, 20, 42, .17);
   text-align: left;
   transition: border-color .25s ease, box-shadow .25s ease;
+  animation: capabilityBreath 7.2s ease-in-out infinite;
+  will-change: transform;
 }
+
+.card-context .app-card-surface { animation-delay: -1.4s; }
+.card-deliverable .app-card-surface { animation-delay: -2.8s; }
 
 .app-card.is-active .app-card-surface,
 .app-card:focus-visible .app-card-surface {
@@ -1860,6 +1865,11 @@ button {
 @keyframes floatCard {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
+}
+
+@keyframes capabilityBreath {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
 }
 
 @keyframes stepWake {

@@ -9,7 +9,7 @@
     />
     <meta name="theme-color" content="#fbfbf8" />
     <title>Pre Meeting｜让每一场会，在开始前就绪</title>
-    <link rel="stylesheet" href="./styles.css?v=20260831-1" />
+    <link rel="stylesheet" href="./styles.css?v=20260831-2" />
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
@@ -128,12 +128,12 @@
           <p>不只是把文档变短，而是把理解、核验和组织提前完成。</p>
         </div>
 
-        <div class="capability-showcase reveal" data-capability-showcase>
+        <div class="capability-showcase reveal" data-capability-showcase data-active-capability="1">
           <div class="capability-stage" aria-label="Pre Meeting 三项核心能力示意">
             <div class="capability-orbit orbit-one" aria-hidden="true"></div>
             <div class="capability-orbit orbit-two" aria-hidden="true"></div>
 
-            <button class="app-card card-context is-active" type="button" data-capability-card="0" aria-pressed="true" aria-label="查看理解会议任务">
+            <button class="app-card card-context" type="button" data-capability-card="0" aria-pressed="false" aria-label="查看理解会议任务">
               <span class="app-card-surface">
                 <span class="app-card-bar"><i></i><i></i><i></i><b>Pre Meeting</b><em>准备中</em></span>
                 <span class="app-card-body">
@@ -152,7 +152,7 @@
               </span>
             </button>
 
-            <button class="app-card card-evidence" type="button" data-capability-card="1" aria-pressed="false" aria-label="查看核验关键证据">
+            <button class="app-card card-evidence is-active" type="button" data-capability-card="1" aria-pressed="true" aria-label="查看核验关键证据">
               <span class="app-card-surface">
                 <span class="app-card-bar"><i></i><i></i><i></i><b>证据工作台</b><em>5 / 5 已读</em></span>
                 <span class="app-card-body">
@@ -189,19 +189,19 @@
             </button>
 
             <div class="capability-card-nav" role="tablist" aria-label="选择能力卡片">
-              <button class="is-active" type="button" role="tab" aria-selected="true" data-capability-select="0"><span>01</span>理解</button>
-              <button type="button" role="tab" aria-selected="false" data-capability-select="1"><span>02</span>核验</button>
+              <button type="button" role="tab" aria-selected="false" data-capability-select="0" tabindex="-1"><span>01</span>理解</button>
+              <button class="is-active" type="button" role="tab" aria-selected="true" data-capability-select="1"><span>02</span>核验</button>
               <button type="button" role="tab" aria-selected="false" data-capability-select="2"><span>03</span>交付</button>
             </div>
           </div>
 
           <article class="capability-story" aria-live="polite">
-            <p class="section-kicker" data-capability-kicker>01 · TASK UNDERSTANDING</p>
-            <h3 data-capability-title>先理解这次真正要解决什么</h3>
-            <p data-capability-description>角色、标题和历史只是线索。Agent 会结合新证据持续修正任务，把注意力从“汇报进展”转向真正需要推动的决定。</p>
+            <p class="section-kicker" data-capability-kicker>02 · EVIDENCE REVIEW</p>
+            <h3 data-capability-title>把关键结论逐条核验清楚</h3>
+            <p data-capability-description>系统会打开真正相关的材料，区分事实、推断和未知项。每个重要判断都能回到来源，缺失的信息则明确留给会上确认。</p>
             <ul data-capability-points>
-              <li>识别会议目标与当前角色</li>
-              <li>证据改变时主动改判</li>
+              <li>只用成功读取的材料支撑结论</li>
+              <li>来源、时间与缺口清晰可见</li>
             </ul>
             <button class="capability-next" type="button" data-capability-next>
               查看下一张 <span aria-hidden="true">→</span>
@@ -262,6 +262,6 @@
       <span>© <span data-year></span></span>
     </footer>
 
-    <script src="./app.js?v=20260831-1"></script>
+    <script src="./app.js?v=20260831-2"></script>
   </body>
 </html>
