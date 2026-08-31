@@ -240,7 +240,7 @@ button {
   font-size: clamp(64px, 8.5vw, 120px);
   font-weight: 760;
   letter-spacing: -0.075em;
-  line-height: 0.98;
+  line-height: 1.08;
 }
 
 .hero h1 span {
@@ -1687,14 +1687,25 @@ button {
 
 .workflow {
   display: grid;
-  grid-template-columns: .8fr 1.2fr;
-  gap: 110px;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
   align-items: start;
 }
 
 .workflow-copy {
   position: sticky;
   top: 120px;
+}
+
+.workflow-copy h2,
+.trust h2 {
+  font-size: clamp(44px, 4.5vw, 60px);
+}
+
+.workflow-copy h2 span,
+.trust h2 span {
+  display: block;
+  white-space: nowrap;
 }
 
 .text-link {
@@ -1811,8 +1822,14 @@ button {
 }
 
 .footer-brand {
+  justify-self: start;
   color: var(--ink);
   font-size: 14px;
+}
+
+.site-footer > span:last-child {
+  justify-self: end;
+  text-align: right;
 }
 
 .footer-brand .brand-mark {
@@ -2345,6 +2362,11 @@ button {
   .trust-panel {
     padding: 42px 24px;
     border-radius: 28px;
+  }
+
+  .workflow-copy h2 span,
+  .trust h2 span {
+    white-space: normal;
   }
 
   .workflow-list li {
